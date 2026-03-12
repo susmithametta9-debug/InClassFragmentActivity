@@ -14,7 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragmentContainerView, ImageDisplayFragment.newInstance(imageArray))
+                .add(R.id.container1, ImageDisplayFragment.newInstance(imageArray))
+                .add(R.id.container2, ImageDisplayFragment.newInstance(imageArray))
                 .commit()
         }
     }
